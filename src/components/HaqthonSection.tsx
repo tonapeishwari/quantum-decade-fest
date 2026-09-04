@@ -2,12 +2,13 @@ import { Cpu } from "lucide-react";
 import { HAQTHON } from "@/data/content";
 import { Reveal } from "./Reveal";
 import { SectionTitle } from "./SectionTitle";
+import { BlochSphere } from "./BlochSphere";
 
 export function HaqthonSection() {
   return (
     <section id="haqthon" className="scroll-mt-24 py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <SectionTitle eyebrow="Flagship challenge" title={HAQTHON.title} description={HAQTHON.tagline} />
+        <SectionTitle eyebrow="Flagship challenge" title={HAQTHON.title} />
 
         <Reveal delay={120} className="mt-12">
           <div className="surface-card overflow-hidden rounded-2xl">
@@ -36,16 +37,19 @@ export function HaqthonSection() {
                 )}
               </div>
 
-              <dl className="grid min-w-0 gap-3 sm:grid-cols-2">
-                {HAQTHON.details.map((d) => (
+              <div className="flex min-w-0 flex-col items-center gap-8">
+                <BlochSphere />
+                <dl className="grid w-full min-w-0 gap-3 sm:grid-cols-2">
+                  {HAQTHON.details.map((d) => (
                   <div key={d.label} className="rounded-xl border border-border bg-background/40 px-4 py-3">
                     <dt className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">
                       {d.label}
                     </dt>
                     <dd className="mt-1 text-sm font-medium text-foreground">{d.value}</dd>
                   </div>
-                ))}
-              </dl>
+                  ))}
+                </dl>
+              </div>
             </div>
           </div>
         </Reveal>

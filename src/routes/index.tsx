@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { AboutSection } from "@/components/AboutSection";
 import { ArenaSection } from "@/components/ArenaSection";
 import { CollaborationSection } from "@/components/CollaborationSection";
 import { HaqthonSection } from "@/components/HaqthonSection";
@@ -37,6 +38,7 @@ function Index() {
       <main>
         <Hero />
         <div className="divider-glow mx-auto w-full max-w-6xl" />
+        <AboutSection />
         <HaqthonSection />
         <ScheduleSection />
         <SpeakersSection />
