@@ -5,6 +5,8 @@
 import iiserLogo from "@/assets/iiser-pune.png.asset.json";
 import mitwpuLogo from "@/assets/mitwpu.png.asset.json";
 import ihubLogo from "@/assets/ihub-quantum.png.asset.json";
+import mmcoeLogo from "@/assets/mmcoe.png.asset.json";
+import ibmQuantumLogo from "@/assets/ibm-quantum.jpg.asset.json";
 
 
 export const NAV_ITEMS = [

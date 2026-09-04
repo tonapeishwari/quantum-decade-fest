@@ -11,31 +11,14 @@ export function BlochSphere({ className = "" }: { className?: string }) {
   // theta = polar angle from |0>, phi = azimuth
   const [angles, setAngles] = useState({ theta: Math.PI / 3, phi: Math.PI / 4 });
 
-  const setFromEvent = (clientX: number, clientY: number) => {
-    const svg = svgRef.current;
-    if (!svg) return;
-    const rect = svg.getBoundingClientRect();
-    const x = ((clientX - rect.left) / rect.width) * 220 - CX;
-    const y = ((clientY - rect.top) / rect.height) * 220 - CY;
-    const dist = Math.min(Math.hypot(x, y) / R, 1);
-    const theta = Math.acos(1 - 2 * ((y / R + 1) / 2 > 1 ? 1 : Math.max(0, Math.min(1, (y / R + 1) / 2))));
-    const phi = Math.atan2(x, -0.0001 - dist);
-    setAngles({ theta, phi: Math.atan2(x, y) + phi * 0 });
-    void theta;
-  };
-
   const handlePointer = (e: React.PointerEvent<SVGSVGElement>) => {
     const svg = svgRef.current;
     if (!svg) return;
     const rect = svg.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width) * 220 - CX;
     const y = ((e.clientY - rect.top) / rect.height) * 220 - CY;
-    const len = Math.hypot(x, y) || 1;
-    const clamped = Math.min(len, R);
     setAngles({ theta: Math.acos(Math.max(-1, Math.min(1, -y / R))), phi: Math.atan2(x, y) });
     setTouched(true);
-    void clamped;
-    void setFromEvent;
   };
 
   const onPointerDown = (e: React.PointerEvent<SVGSVGElement>) => {
