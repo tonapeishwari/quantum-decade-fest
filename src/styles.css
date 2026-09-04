@@ -219,3 +219,15 @@
 @utility orbit {
   animation: orbit-spin 26s linear infinite;
 }
+
+/* Bloch sphere */
+.bloch-sphere .bloch-vector {
+  animation: bloch-precess 12s linear infinite;
+}
+@keyframes bloch-precess {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bloch-sphere .bloch-vector { animation: none; }
+}

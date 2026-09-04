@@ -54,7 +54,7 @@ export const HAQTHON = {
     { label: "Eligibility", value: "To be announced" },
   ],
   // Set to a registration URL when available.
-  registrationUrl: "#haqthon",
+  registrationUrl: "",
   ctaLabel: "Registration opening soon",
 };
 
