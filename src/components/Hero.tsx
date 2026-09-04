@@ -1,14 +1,25 @@
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { HAQTHON, HERO, INSTITUTIONS } from "@/data/content";
 import { Reveal } from "./Reveal";
+import qiskitWordmark from "@/assets/qiskit-wordmark.png.asset.json";
+import fallFestBadge from "@/assets/fall-fest-2026.png.asset.json";
 
 export function Hero() {
   return (
     <section id="home" className="relative flex min-h-[100svh] items-center pt-24 pb-16 sm:pt-28">
       <div className="mx-auto w-full max-w-6xl px-4 text-center sm:px-6">
         <Reveal>
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.34em] text-accent sm:text-xs">
-            {HERO.eyebrow}
+          <img
+            src={fallFestBadge.url}
+            alt="Qiskit Fall Fest 2026 badge"
+            className="mx-auto size-24 rounded-full sm:size-28"
+          />
+        </Reveal>
+
+        <Reveal delay={80}>
+          <p className="mt-6 flex flex-wrap items-center justify-center gap-2 font-mono text-[0.65rem] uppercase tracking-[0.34em] text-accent sm:text-xs">
+            <span>In partnership with IBM</span>
+            <img src={qiskitWordmark.url} alt="Qiskit" className="h-4 w-auto invert sm:h-5" />
           </p>
         </Reveal>
 
