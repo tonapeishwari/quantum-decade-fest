@@ -2,6 +2,11 @@
 // All event content lives here. Edit this file to update the site.
 // ─────────────────────────────────────────────────────────────
 
+import iiserLogo from "@/assets/iiser-pune.png.asset.json";
+import mitwpuLogo from "@/assets/mitwpu.png.asset.json";
+import ihubLogo from "@/assets/ihub-quantum.png.asset.json";
+
+
 export const NAV_ITEMS = [
   { id: "home", label: "Home" },
   { id: "haqthon", label: "HaQthon" },
