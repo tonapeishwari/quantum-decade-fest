@@ -33,9 +33,18 @@ export const HERO = {
   ],
 };
 
+export const ABOUT = {
+  eyebrow: "About",
+  title: "About the event",
+  paragraphs: [
+    "Qiskit Fall Fest is a student-led celebration of quantum computing held on campuses worldwide in partnership with IBM Quantum. The Pune edition is hosted jointly by IISER Pune, MIT World Peace University and MMCOE.",
+    "Across the festival, participants move from first circuits to real hardware through workshops, talks and the HaQthon challenge — open to newcomers and experienced researchers alike.",
+  ],
+};
+
 export const HAQTHON = {
   title: "HaQthon",
-  tagline: "Build with qubits. Ship in 36 hours.",
+  tagline: "",
   description:
     "A quantum hackathon for students and researchers across the three host institutes. Teams prototype on real quantum hardware and simulators using Qiskit — no prior quantum experience required.",
   details: [
@@ -45,7 +54,7 @@ export const HAQTHON = {
     { label: "Eligibility", value: "To be announced" },
   ],
   // Set to a registration URL when available.
-  registrationUrl: "",
+  registrationUrl: "#haqthon",
   ctaLabel: "Registration opening soon",
 };
 
@@ -118,28 +127,27 @@ export type CollaboratorData = {
 export const COLLABORATORS: CollaboratorData[] = [
   {
     name: "IISER Pune",
-    role: "Host institute",
+    role: "",
     url: "https://www.iiserpune.ac.in",
     initials: "IP",
     logo: iiserLogo.url,
   },
   {
     name: "MIT World Peace University",
-    role: "Host institute",
+    role: "",
     url: "https://mitwpu.edu.in",
     initials: "MW",
     logo: mitwpuLogo.url,
   },
-  { name: "MMCOE", role: "Host institute", url: "https://mmcoe.edu.in", initials: "MM" },
+  { name: "MMCOE", role: "", url: "https://mmcoe.edu.in", initials: "MM" },
   {
     name: "I-HUB Quantum Technology Foundation",
-    role: "Partner",
+    role: "",
     url: "",
     initials: "IH",
     logo: ihubLogo.url,
   },
-  { name: "IBM Quantum", role: "Technology partner", url: "https://www.ibm.com/quantum", initials: "IQ" },
-  { name: "Quantech", role: "Community partner", url: "https://www.quantech.org.in", initials: "QT" },
+  { name: "IBM Quantum", role: "", url: "https://www.ibm.com/quantum", initials: "IQ" },
 ];
 
 export type SocialData = { platform: string; url: string };
@@ -148,8 +156,6 @@ export type SocialData = { platform: string; url: string };
 export const SOCIALS: SocialData[] = [
   { platform: "Instagram", url: "" },
   { platform: "LinkedIn", url: "" },
-  { platform: "YouTube", url: "" },
-  { platform: "X", url: "" },
 ];
 
 export const ARENA_CARDS = [
