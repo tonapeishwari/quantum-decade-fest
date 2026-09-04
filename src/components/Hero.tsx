@@ -19,7 +19,7 @@ export function Hero() {
         <Reveal delay={80}>
           <p className="mt-6 flex flex-wrap items-center justify-center gap-2 font-mono text-[0.65rem] uppercase tracking-[0.34em] text-accent sm:text-xs">
             <span>In partnership with IBM</span>
-            <img src={qiskitWordmark.url} alt="Qiskit" className="h-4 w-auto invert sm:h-5" />
+            <img src={qiskitWordmark.url} alt="Qiskit" className="h-4 w-auto mix-blend-screen invert sm:h-5" />
           </p>
         </Reveal>
 

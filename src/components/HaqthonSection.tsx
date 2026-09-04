@@ -9,11 +9,11 @@ export function HaqthonSection() {
   return (
     <section id="haqthon" className="scroll-mt-24 py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+        <div className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
           <img
             src={blochMark.url}
             alt="Bloch sphere symbol"
-            className="size-16 shrink-0 rounded-full invert sm:size-20"
+            className="size-16 shrink-0 rounded-full invert mix-blend-screen sm:size-20"
           />
           <SectionTitle eyebrow="Flagship challenge" title={HAQTHON.title} />
         </div>

@@ -8,7 +8,7 @@ export function SpeakersSection() {
   return (
     <section id="speakers" className="scroll-mt-24 py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-8">
+        <div className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-4 sm:flex-row sm:gap-8">
           <img
             src={eagle.url}
             alt="Qiskit eagle emblem"
