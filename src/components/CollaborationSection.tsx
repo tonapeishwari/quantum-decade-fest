@@ -10,7 +10,6 @@ export function CollaborationSection() {
         <SectionTitle
           eyebrow="Together"
           title="Collaboration"
-          description="A joint effort by three Pune institutes with quantum technology partners."
         />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -34,9 +33,6 @@ export function CollaborationSection() {
                   )}
                   <div className="min-w-0">
                     <h3 className="truncate text-base font-medium text-foreground">{c.name}</h3>
-                    <p className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">
-                      {c.role}
-                    </p>
                   </div>
                 </div>
                 {c.url ? (

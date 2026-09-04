@@ -1,5 +1,5 @@
 import { ArrowRight, ExternalLink } from "lucide-react";
-import { HERO, INSTITUTIONS } from "@/data/content";
+import { HAQTHON, HERO, INSTITUTIONS } from "@/data/content";
 import { Reveal } from "./Reveal";
 
 export function Hero() {
@@ -53,16 +53,22 @@ export function Hero() {
         <Reveal delay={440}>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
+              href={HAQTHON.registrationUrl || "#haqthon"}
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-white px-7 text-sm font-semibold text-neutral-900 transition-transform hover:-translate-y-0.5 sm:w-auto"
+            >
+              Register for event <ArrowRight className="size-4" />
+            </a>
+            <a
               href="#haqthon"
               className="glow-ring inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-primary px-7 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 sm:w-auto"
             >
               Explore HaQthon <ArrowRight className="size-4" />
             </a>
             <a
-              href="#schedule"
+              href="#arena"
               className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-border bg-surface px-7 text-sm font-semibold text-foreground transition-colors hover:bg-surface-2 sm:w-auto"
             >
-              View schedule <ExternalLink className="size-4" />
+              Quantum Arena <ExternalLink className="size-4" />
             </a>
           </div>
         </Reveal>
