@@ -141,7 +141,7 @@ export const COLLABORATORS: CollaboratorData[] = [
     initials: "MW",
     logo: mitwpuLogo.url,
   },
-  { name: "MMCOE", role: "", url: "https://mmcoe.edu.in", initials: "MM" },
+  { name: "MMCOE", role: "", url: "https://mmcoe.edu.in", initials: "MM", logo: mmcoeLogo.url },
   {
     name: "I-HUB Quantum Technology Foundation",
     role: "",
@@ -149,7 +149,13 @@ export const COLLABORATORS: CollaboratorData[] = [
     initials: "IH",
     logo: ihubLogo.url,
   },
-  { name: "IBM Quantum", role: "", url: "https://www.ibm.com/quantum", initials: "IQ" },
+  {
+    name: "IBM Quantum",
+    role: "",
+    url: "https://www.ibm.com/quantum",
+    initials: "IQ",
+    logo: ibmQuantumLogo.url,
+  },
 ];
 
 export type SocialData = { platform: string; url: string };
