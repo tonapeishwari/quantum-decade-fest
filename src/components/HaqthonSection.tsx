@@ -3,12 +3,20 @@ import { HAQTHON } from "@/data/content";
 import { Reveal } from "./Reveal";
 import { SectionTitle } from "./SectionTitle";
 import { BlochSphere } from "./BlochSphere";
+import blochMark from "@/assets/bloch-sphere.png.asset.json";
 
 export function HaqthonSection() {
   return (
     <section id="haqthon" className="scroll-mt-24 py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <SectionTitle eyebrow="Flagship challenge" title={HAQTHON.title} />
+        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+          <img
+            src={blochMark.url}
+            alt="Bloch sphere symbol"
+            className="size-16 shrink-0 rounded-full invert sm:size-20"
+          />
+          <SectionTitle eyebrow="Flagship challenge" title={HAQTHON.title} />
+        </div>
 
         <Reveal delay={120} className="mt-12">
           <div className="surface-card overflow-hidden rounded-2xl">

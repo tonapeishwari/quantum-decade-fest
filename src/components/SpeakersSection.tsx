@@ -2,16 +2,24 @@ import { Mic } from "lucide-react";
 import { SPEAKERS } from "@/data/content";
 import { Reveal } from "./Reveal";
 import { SectionTitle } from "./SectionTitle";
+import eagle from "@/assets/qiskit-eagle.png.asset.json";
 
 export function SpeakersSection() {
   return (
     <section id="speakers" className="scroll-mt-24 py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <SectionTitle
-          eyebrow="Voices"
-          title="Speakers"
-          description="Researchers and practitioners from academia and industry. Line-up announced soon."
-        />
+        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-8">
+          <img
+            src={eagle.url}
+            alt="Qiskit eagle emblem"
+            className="size-20 shrink-0 object-contain sm:size-28"
+          />
+          <SectionTitle
+            eyebrow="Voices"
+            title="Speakers"
+            description="Researchers and practitioners from academia and industry. Line-up announced soon."
+          />
+        </div>
 
         {SPEAKERS.length ? (
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
