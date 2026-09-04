@@ -107,14 +107,32 @@ export type CollaboratorData = {
   role: string;
   url: string;
   initials: string;
+  logo?: string;
 };
 
 export const COLLABORATORS: CollaboratorData[] = [
-  { name: "IISER Pune", role: "Host institute", url: "https://www.iiserpune.ac.in", initials: "IP" },
-  { name: "MIT World Peace University", role: "Host institute", url: "https://mitwpu.edu.in", initials: "MW" },
+  {
+    name: "IISER Pune",
+    role: "Host institute",
+    url: "https://www.iiserpune.ac.in",
+    initials: "IP",
+    logo: iiserLogo.url,
+  },
+  {
+    name: "MIT World Peace University",
+    role: "Host institute",
+    url: "https://mitwpu.edu.in",
+    initials: "MW",
+    logo: mitwpuLogo.url,
+  },
   { name: "MMCOE", role: "Host institute", url: "https://mmcoe.edu.in", initials: "MM" },
-  // No official URL on record yet — add it here when confirmed.
-  { name: "I-HUB", role: "Partner", url: "", initials: "IH" },
+  {
+    name: "I-HUB Quantum Technology Foundation",
+    role: "Partner",
+    url: "",
+    initials: "IH",
+    logo: ihubLogo.url,
+  },
   { name: "IBM Quantum", role: "Technology partner", url: "https://www.ibm.com/quantum", initials: "IQ" },
   { name: "Quantech", role: "Community partner", url: "https://www.quantech.org.in", initials: "QT" },
 ];
