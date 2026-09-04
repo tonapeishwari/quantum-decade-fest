@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV_ITEMS } from "@/data/content";
+import fallFestBadge from "@/assets/fall-fest-2026.png.asset.json";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -45,10 +46,12 @@ export function Navbar() {
         className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3 sm:px-6 lg:py-4"
       >
         <a href="#home" className="flex min-w-0 items-center gap-2.5">
-          <span className="grid size-9 shrink-0 place-items-center rounded-full border border-border bg-surface">
-            <span className="orbit block size-4 rounded-full border border-primary border-t-accent" />
-          </span>
-          <span className="font-display truncate text-base tracking-wide sm:text-lg">Qiskit Fall Fest</span>
+          <img
+            src={fallFestBadge.url}
+            alt="Qiskit Fall Fest 2026"
+            className="size-9 shrink-0 rounded-full"
+          />
+          <span className="font-display truncate text-base tracking-wide sm:text-lg">Fall Fest</span>
         </a>
 
         <ul className="hidden items-center gap-1 lg:flex">

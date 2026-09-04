@@ -5,6 +5,8 @@
 import iiserLogo from "@/assets/iiser-pune.png.asset.json";
 import mitwpuLogo from "@/assets/mitwpu.png.asset.json";
 import ihubLogo from "@/assets/ihub-quantum.png.asset.json";
+import mmcoeLogo from "@/assets/mmcoe.png.asset.json";
+import ibmQuantumLogo from "@/assets/ibm-quantum.jpg.asset.json";
 
 
 export const NAV_ITEMS = [
@@ -139,7 +141,7 @@ export const COLLABORATORS: CollaboratorData[] = [
     initials: "MW",
     logo: mitwpuLogo.url,
   },
-  { name: "MMCOE", role: "", url: "https://mmcoe.edu.in", initials: "MM" },
+  { name: "MMCOE", role: "", url: "https://mmcoe.edu.in", initials: "MM", logo: mmcoeLogo.url },
   {
     name: "I-HUB Quantum Technology Foundation",
     role: "",
@@ -147,7 +149,13 @@ export const COLLABORATORS: CollaboratorData[] = [
     initials: "IH",
     logo: ihubLogo.url,
   },
-  { name: "IBM Quantum", role: "", url: "https://www.ibm.com/quantum", initials: "IQ" },
+  {
+    name: "IBM Quantum",
+    role: "",
+    url: "https://www.ibm.com/quantum",
+    initials: "IQ",
+    logo: ibmQuantumLogo.url,
+  },
 ];
 
 export type SocialData = { platform: string; url: string };
