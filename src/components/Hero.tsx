@@ -65,7 +65,7 @@ export function Hero() {
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
               href={HAQTHON.registrationUrl || "#haqthon"}
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-white px-7 text-sm font-semibold text-neutral-900 transition-transform hover:-translate-y-0.5 sm:w-auto"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-accent/40 bg-surface-2 px-7 text-sm font-semibold text-accent transition-transform hover:-translate-y-0.5 hover:bg-secondary sm:w-auto"
             >
               Register for event <ArrowRight className="size-4" />
             </a>
